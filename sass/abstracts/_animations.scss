@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+  .promo__headline {
+    animation-name: slidein;
+    animation-duration: 1s;
+  }
+
+  @keyframes slidein {
+    from {
+      top: 15%;
+      opacity: 0;
+    }
+    to {
+      top: 30%;
+      opacity: 1;
+    }
+  }
+
+  .promo__label {
+    animation-name: slideleft;
+    animation-duration: 1s;
+  }
+
+  @keyframes slideleft {
+    from {
+      left: 15%;
+      opacity: 0;
+    }
+    to {
+      left: 25%;
+      opacity: 1;
+    }
+  }
+
+  .promo__info {
+    animation-name: slidedown;
+    animation-duration: 1s;
+  }
+
+  @keyframes slidedown {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    to {
+      bottom: 94px;
+      opacity: 1;
+    }
+  }
+}

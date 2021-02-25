@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tech. Innovation Conference 2021</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo">
+          <a href="./" class="logo__text">tic</a>
+        </div>
+        <nav class="header__nav nav">
+          <button class="burger-menu" aria-label="Open the menu">
+            <span></span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./" class="nav__link"><span>Home</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#speakers" class="nav__link"><span>Speakers</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#agenda" class="nav__link"><span>Agenda</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#venue" class="nav__link"><span>Venue</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link"><span>Contact</span></a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__btn" data-popup-trigger>Buy tickets</button>
+      </header>
+      <main class="main">
+        <section class="promo" data-section>
+          <div class="promo__overlay"></div>
+          <h1 class="promo__headline">
+            Tech. Innovation <br />
+            Conference 2021
+          </h1>
+          <span class="promo__label">Stay Ahead of the Industry</span>
+          <div class="promo__info">
+            <div class="promo__wrapper">
+              <div class="promo__date outline">aug 1</div>
+              <div class="promo__location outline">san francisco</div>
+            </div>
+            <button class="promo__btn btn" data-popup-trigger>
+              Buy tickets
+            </button>
+          </div>
+        </section>
+
+        <section class="speakers" id="speakers" data-section>
+          <div class="speakers__header container">
+            <h2 class="speakers__headline headline">The Speakers</h2>
+            <div class="label">
+              <span class="label__number">04</span>
+              <span class="label__text">Featured industry experts</span>
+            </div>
+          </div>
+
+          <div class="speakers__wrapper">
+            <ul class="speakers__items">
+              <li class="speakers__item">
+                <div class="label label_speakers">
+                  <span class="label__number label__number_speakers">01</span>
+                  <span class="label__text label__text_speakers"
+                    >Data Analyst</span
+                  >
+                </div>
+
+                <picture class="speakers__img">
+                  <source srcset="./images/speakers_1.webp" type="image/webp" />
+                  <source srcset="./images/speakers_1.jpeg" type="image/jpeg" />
+                  <img src="./images/speakers_1.jpeg" alt="Data Analyst" />
+                </picture>
+                <div class="speakers__content">
+                  <h3 class="speakers__name">Robyn Brown</h3>
+                  <span class="speakers__subheader"
+                    >Building Data Driven Companies</span
+                  >
+                  <p class="speakers__text">
+                    I'm a paragraph. Click here to add your own text and edit
+                    me. It’s easy. Just click “Edit Text” or double click me to
+                    add your own content and make changes to the font. I’m a
+                    great place for you to tell a story and let your users know
+                    a little more about you.
+                  </p>
+                  <div class="follow">
+                    <span class="follow__caption">follow</span>
+                    <div class="follow__img follow__img_first">
+                      <img src="./images/twitter-black.svg" alt="Twitter" />
+                    </div>
+                    <div class="follow__img">
+                      <img src="./images/linkedin-black.svg" alt="Linkedin" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="speakers__item speakers__item_reverse">
+                <div class="label label_speakers">
+                  <span class="label__number label__number_speakers">02</span>
+                  <span class="label__text label__text_speakers"
+                    >Cloud Architect</span
+                  >
+                </div>
+
+                <picture class="speakers__img">
+                  <source srcset="./images/speakers_2.webp" type="image/webp" />
+                  <source srcset="./images/speakers_2.jpeg" type="image/jpeg" />
+                  <img src="./images/speakers_2.jpeg" alt="Data Analyst" />
+                </picture>
+                <div class="speakers__content">
+                  <h3 class="speakers__name">Simon Powell</h3>
+                  <span class="speakers__subheader">The Future of Cloud</span>
+                  <p class="speakers__text">
+                    I'm a paragraph. Click here to add your own text and edit
+                    me. It’s easy. Just click “Edit Text” or double click me to
+                    add your own content and make changes to the font. I’m a
+                    great place for you to tell a story and let your users know
+                    a little more about you.
+                  </p>
+                  <div class="follow">
+                    <span class="follow__caption">follow</span>
+                    <div class="follow__img follow__img_first">
+                      <img src="./images/twitter-black.svg" alt="Twitter" />
+                    </div>
+                    <div class="follow__img">
+                      <img src="./images/linkedin-black.svg" alt="Linkedin" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="speakers__item">
+                <div class="label label_speakers">
+                  <span class="label__number label__number_speakers">03</span>
+                  <span class="label__text label__text_speakers"
+                    >Product Designer</span
+                  >
+                </div>
+
+                <picture class="speakers__img">
+                  <source srcset="./images/speakers_3.webp" type="image/webp" />
+                  <source srcset="./images/speakers_3.jpeg" type="image/jpeg" />
+                  <img src="./images/speakers_3.jpeg" alt="Data Analyst" />
+                </picture>
+                <div class="speakers__content">
+                  <h3 class="speakers__name">Matthew Lyons</h3>
+                  <span class="speakers__subheader"
+                    >Easy Functional Design</span
+                  >
+                  <p class="speakers__text">
+                    I'm a paragraph. Click here to add your own text and edit
+                    me. It’s easy. Just click “Edit Text” or double click me to
+                    add your own content and make changes to the font. I’m a
+                    great place for you to tell a story and let your users know
+                    a little more about you.
+                  </p>
+                  <div class="follow">
+                    <span class="follow__caption">follow</span>
+                    <div class="follow__img follow__img_first">
+                      <img src="./images/twitter-black.svg" alt="Twitter" />
+                    </div>
+                    <div class="follow__img">
+                      <img src="./images/linkedin-black.svg" alt="Linkedin" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="speakers__item speakers__item_reverse">
+                <div class="label label_speakers">
+                  <span class="label__number label__number_speakers">04</span>
+                  <span class="label__text label__text_speakers"
+                    >HR Specialist</span
+                  >
+                </div>
+                <picture class="speakers__img">
+                  <source srcset="./images/speakers_4.webp" type="image/webp" />
+                  <source srcset="./images/speakers_4.jpeg" type="image/jpeg" />
+                  <img src="./images/speakers_4.jpeg" alt="Data Analyst" />
+                </picture>
+                <div class="speakers__content">
+                  <h3 class="speakers__name">Britney Swanson</h3>
+                  <span class="speakers__subheader"
+                    >Building the Skills of the Future</span
+                  >
+                  <p class="speakers__text">
+                    I'm a paragraph. Click here to add your own text and edit
+                    me. It’s easy. Just click “Edit Text” or double click me to
+                    add your own content and make changes to the font. I’m a
+                    great place for you to tell a story and let your users know
+                    a little more about you.
+                  </p>
+                  <div class="follow">
+                    <span class="follow__caption">follow</span>
+                    <div class="follow__img follow__img_first">
+                      <img src="./images/twitter-black.svg" alt="Twitter" />
+                    </div>
+                    <div class="follow__img">
+                      <img src="./images/linkedin-black.svg" alt="Linkedin" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="agenda" id="agenda" data-section>
+          <div class="agenda__header container">
+            <h2 class="agenda__headline headline">Agenda</h2>
+            <div class="label">
+              <span class="label__text label__text_agenda">AUG 1</span>
+            </div>
+          </div>
+          <div class="agenda__wrapper">
+            <ul class="agenda__timing">
+              <li class="agenda__item">
+                <span class="agenda__time">10:00</span>
+                <span class="agenda__event">Meet & Greet</span>
+              </li>
+              <li class="agenda__item">
+                <span class="agenda__time">12:00</span>
+                <span class="agenda__event">Sessions Stage</span>
+              </li>
+              <li class="agenda__item">
+                <span class="agenda__time">13:00</span>
+                <span class="agenda__event">Lunch</span>
+              </li>
+              <li class="agenda__item">
+                <span class="agenda__time">14:00</span>
+                <span class="agenda__event">Networking</span>
+              </li>
+              <li class="agenda__item">
+                <span class="agenda__time">16:00</span>
+                <span class="agenda__event">Q & A Session</span>
+              </li>
+            </ul>
+          </div>
+          <div class="agenda__summary">
+            <div class="agenda__column">
+              <span class="agenda__number">01</span>
+              <span class="agenda__caption">day</span>
+            </div>
+            <div class="agenda__column">
+              <span class="agenda__number">04 </span>
+              <span class="agenda__caption">speakers</span>
+            </div>
+            <div class="agenda__column">
+              <span class="agenda__number">200 </span>
+              <span class="agenda__caption">participants</span>
+            </div>
+            <div class="agenda__column">
+              <button class="agenda__btn btn" data-popup-trigger>
+                Buy tickets
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="venue" id="venue" data-section>
+          <div class="venue__img"></div>
+          <div class="venue__content">
+            <h2 class="venue__headline headline">The Venue</h2>
+            <div class="venue__label label">
+              <address class="label__text">
+                500 Terry Francois Street <br />
+                San Francisco, CA 94158
+              </address>
+            </div>
+            <p class="venue__text">
+              I'm a paragraph. Click here to add your own text and edit me. It’s
+              easy. Just click “Edit Text” or double click me to add your own
+              content and make changes to the font. I’m a great place for you to
+              tell a story and let your users know a little more about you.
+            </p>
+          </div>
+        </section>
+        <section class="sponsors container" data-section>
+          <div class="sponsors__header">
+            <h2 class="sponsors__headline headline">Our Sponsors</h2>
+            <div class="sponsors__label label">
+              <p class="sponsors__text label__text">Leading in the industry</p>
+            </div>
+          </div>
+          <div class="logos">
+            <ul class="logos__items">
+              <li class="logos__item logos__item_big">
+                <a href="#" class="logos__link">
+                  <img src="./images/logo-2.svg" class="logos__img" />
+                </a>
+              </li>
+              <li class="logos__item logos__item_big">
+                <a href="#" class="logos__link">
+                  <img src="./images/logo-3.svg" class="logos__img" />
+                </a>
+              </li>
+              <li class="logos__item logos__item_big">
+                <a href="#" class="logos__link">
+                  <img src="./images/logo-4.svg" class="logos__img" />
+                </a>
+              </li>
+              <li class="logos__item">
+                <a href="#" class="logos__link">
+                  <img src="./images/logo-1.svg" class="logos__img" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="contact container">
+          <div class="contact__section">
+            <h2 class="contact__headline headline">
+              Tech. Innovation<br />
+              Conference 2021
+            </h2>
+            <div class="contact__label label">
+              <span class="contact__txt label__text"
+                >Stay Ahead of the Industry</span
+              >
+            </div>
+          </div>
+          <div class="contact__section line">
+            <div class="contact__wrapper">
+              <div class="contact__column">
+                <span class="contact__caption">What</span>
+                <p class="contact__text">
+                  Tech. Innovation <br />
+                  Conference 2021
+                </p>
+              </div>
+              <div class="contact__column">
+                <span class="contact__caption">What</span>
+                <time class="contact__text" datatime="2021-08-01"
+                  >August 1st, 2021</time
+                >
+              </div>
+              <div class="contact__column">
+                <span class="contact__caption">What</span>
+                <address class="contact__text">
+                  500 Terry Francois Street<br />
+                  San Francisco, CA 94158
+                </address>
+              </div>
+            </div>
+            <div class="contact__column">
+              <button type="button" class="contact__btn btn" data-popup-trigger>
+                Buy tickets
+              </button>
+            </div>
+          </div>
+          <div class="contact__section contact__section_flex">
+            <span class="contact__caption">Contact Us</span>
+            <p class="contact__text">
+              To learn more, don’t hesitate to get in touch
+            </p>
+            <form method="POST" class="contact__form">
+              <input
+                type="email"
+                name="contact-email"
+                placeholder="Your email address"
+                class="contact__input"
+                required
+              />
+              <button type="submit" class="contact__btn">Submit</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <section class="footer__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8390571953405!2d-122.38931348468252!3d37.77037177976025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe7ace37%3A0xfa1746dd4faeb818!2s500%20Terry%20A%20Francois%20Blvd%2C%20San%20Francisco%2C%20CA%2094158%2C%20%D0%A1%D0%A8%D0%90!5e0!3m2!1sru!2sua!4v1612796814750!5m2!1sru!2sua"
+            width="100%"
+            height="300"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="500 Terry A Francois Blvd"
+            tabindex="0"
+          ></iframe>
+        </section>
+        <section class="footer__copyright">
+          <p class="footer__text">© 2021 by TIC. All rights reserved.</p>
+        </section>
+      </footer>
+    </div>
+
+    <div class="popup">
+      <div class="popup__body">
+        <button class="popup__close"></button>
+        <div class="popup__content">
+          <p class="popup__text">
+            Thank you for expressing the interest in the event Tech. Innovation
+            Conference 2021! We will inform you as soon as tickets are
+            available!
+          </p>
+          <form method="POST" class="popup__form">
+            <input
+              type="text"
+              name="name"
+              class="popup__control"
+              required
+              placeholder="Name"
+            />
+            <input
+              type="email"
+              name="email"
+              class="popup__control"
+              required
+              placeholder="Email"
+            />
+            <button type="submit" class="popup__btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

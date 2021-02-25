@@ -1,0 +1,8 @@
+@mixin line {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: $violet;
+}

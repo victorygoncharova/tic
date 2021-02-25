@@ -1,0 +1,39 @@
+.sponsors {
+  width: 100%;
+  min-height: 496px;
+  padding-top: 120px;
+  background-color: $violet;
+  &__header {
+    display: flex;
+  }
+  &__headline {
+    color: #fff;
+  }
+  &__label {
+    color: #fff;
+  }
+  &__text {
+    margin-top: 14px;
+    padding-left: 135px;
+    &::before {
+      margin-top: 6px;
+      background-color: #fff;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .sponsors {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &__header {
+      flex-direction: column;
+    }
+    &__text {
+      padding-left: 100px;
+    }
+    &__text::before {
+      left: 6px;
+    }
+  }
+}

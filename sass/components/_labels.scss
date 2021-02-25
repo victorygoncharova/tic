@@ -1,0 +1,54 @@
+.label {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  position: relative;
+  color: $violet;
+  min-width: 420px;
+  margin-left: 0;
+  &__text {
+    text-transform: uppercase;
+    padding-left: 105px;
+    line-height: 1.5;
+    &:before {
+      @include line;
+      left: 40px;
+      width: 65px;
+      height: 1px;
+    }
+    &_speakers {
+      text-transform: capitalize;
+    }
+    &_agenda {
+      padding-left: 250px;
+      &:before {
+        @include line;
+        left: 40px;
+        width: 154px;
+        height: 1px;
+      }
+    }
+  }
+  &_speakers {
+    transform: rotate(90deg);
+    width: 20px;
+    position: absolute;
+    top: 75%;
+    left: -24%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .label {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .label {
+    min-width: 270px;
+  }
+}

@@ -1,0 +1,59 @@
+@import "./reset";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/animations";
+@import "./components/buttons";
+@import "./components/burger";
+@import "./components/headlines";
+@import "./components/labels";
+@import "./components/header";
+@import "./components/promo";
+@import "./components/follow";
+@import "./components/speakers";
+@import "./components/agenda";
+@import "./components/venue";
+@import "./components/container";
+@import "./components/logos";
+@import "./components/sponsors";
+@import "./components/contact";
+@import "./components/footer";
+@import "./components/popup";
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  min-height: 100%;
+}
+
+body {
+  background: #fff;
+  min-height: 100%;
+  overflow-x: hidden;
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.outline {
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

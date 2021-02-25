@@ -1,0 +1,155 @@
+.contact {
+  background-color: $dark-blue;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  &__section {
+    display: flex;
+    padding-bottom: 60px;
+    position: relative;
+    &:nth-child(2) {
+      padding-top: 60px;
+    }
+    &_flex {
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    &.line {
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+
+        width: 100%;
+        height: 1px;
+        background: $graphite;
+      }
+
+      &::before {
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__headline {
+    font-size: 50px;
+    color: #fff;
+    font-weight: normal;
+  }
+  &__label {
+    min-width: auto;
+    position: relative;
+    align-items: flex-end;
+  }
+  &__txt {
+    &::before {
+      top: auto;
+      bottom: 12px;
+      left: 25px;
+    }
+  }
+  &__btn {
+    background: $violet;
+    color: #fff;
+  }
+  &__column {
+    width: 260px;
+    color: #fff;
+    padding-right: 44px;
+  }
+  &__caption {
+    display: block;
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+  }
+  &__text {
+    display: block;
+    margin-top: 22px;
+    color: $gray;
+    font-size: 18px;
+  }
+  &__form {
+    margin-top: 52px;
+  }
+  &__input {
+    width: 325px;
+    min-height: 56px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+    &::placeholder {
+      color: #fff;
+    }
+    &:hover {
+      border: 1px solid $dark-gray;
+      background-color: $dark-gray;
+      transition: all 500ms;
+    }
+  }
+  &__btn {
+    width: 164px;
+    min-height: 56px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 4px;
+    &:hover {
+      border: 1px solid $violet;
+      background-color: $violet;
+      transition: all 500ms;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contact {
+    &__section {
+      flex-direction: column;
+    }
+    &__caption {
+      font-size: 35px;
+    }
+    &__txt {
+      margin-top: 20px;
+    }
+    &__txt::before {
+      left: 6px;
+    }
+    &__input {
+      display: block;
+      width: 80%;
+      margin-bottom: 30px;
+    }
+    &__btn {
+      width: 250px;
+    }
+    &__text {
+      font-size: 18px;
+      margin-bottom: 22px;
+      &:last-child {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
+}
